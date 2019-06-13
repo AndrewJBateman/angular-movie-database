@@ -1,10 +1,31 @@
 nav {
 	background: linear-gradient(to right, #f27121, #e94057);
-  padding: 10px
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
-  margin: 0;
+  margin: 5px;
   padding: 0;
   color: white;
+}
+
+button {
+  border: 0;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  font-size: 18px;
+  color: white;
+  margin-right: 14px;
+  height: 40px;
+  width: 100px;
+  box-shadow: 5px 5px 0 black;
+  border-radius: 10px;
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  &:hover {
+    border-radius: 0;
+    background: black;
+    box-shadow: 5px 5px 0 #48dbfb;
+    transform: translate(-2px) scale(1.1);
+  }
 }

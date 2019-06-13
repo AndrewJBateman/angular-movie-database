@@ -1,0 +1,22 @@
+img {
+  max-width: 300px;
+
+  @media(max-width: 640px) {
+    max-width: 200px;
+  }
+}
+
+div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+}
