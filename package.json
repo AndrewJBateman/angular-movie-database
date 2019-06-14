@@ -8,8 +8,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "api": "json-server db.json"
+    "api": "json-server --watch db.json"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndrewJBateman/angular-movie-database"
+  },
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.0.0",

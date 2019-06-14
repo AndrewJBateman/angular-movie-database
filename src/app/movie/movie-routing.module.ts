@@ -19,6 +19,7 @@ const routes: Routes = [
   }
 ];
 
+// it is specified that these are child routes
 @NgModule({
   imports: [
     RouterModule.forChild(routes)

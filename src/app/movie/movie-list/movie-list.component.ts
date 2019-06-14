@@ -44,7 +44,7 @@ export class MovieListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.loadingMovies = new Array(8).fill(0)
+    this.loadingMovies = new Array(9).fill(0)
       .map((n, index) => index);
 
     this.movies$ = this.movieService.getMoviesFromHttp();

@@ -1,4 +1,4 @@
-<form [formGroup]="movieForm" ngSubmit="addMovie()">
+<form [formGroup]="movieForm" (ngSubmit)="addMovie()">
 
   <input type="text" placeholder="Name" formControlName="name" />
   <input type="text" placeholder="Image URL" formControlName="image" />

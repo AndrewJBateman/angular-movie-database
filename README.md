@@ -1,6 +1,6 @@
 # Angular Movie Database
 
-* App using Angular 8, to create a movie database. So far this has a home screen with all movies list using their images. Each image redirects to a detail page with movie details lists using data-binding.
+* App using Angular 8, to create a movie database. The home screen displays a list of movie images. Each image redirects to a movie detail page with movie details listed using data-binding.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -17,11 +17,17 @@
 
 ## General info
 
+* App routing module to load movie home screen. Differential loading used with 2nd routing module - see below:
+
+* Movie-routing module for: list of movies (MovieListComponent), form to add movie (AddMovieComponent) and a movie detail page (MovieDetailComponent).
+
 * Dummy backend used to store json movie data.
 
 ## Screenshots
 
-![Example screenshot](./img/home.png).
+![Example screenshot](./img/movie-list.png).
+![Example screenshot](./img/json-data.png).
+![Example screenshot](./img/detail-page.png).
 
 ## Technologies
 
@@ -31,17 +37,17 @@
 
 * [RxJS Library v6.4.2](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html).
 
-* [json-server v0.15.0](https://www.npmjs.com/package/json-server) used to get a fake API.
+* [json-server v0.15.0](https://www.npmjs.com/package/json-server) used with the `db.json` file to get a fake API.
 
 ## Setup
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app does automatically reload if you change any of the source files.
 
-Run `npm run api` for a local json server. Navigate to `http://localhost:3000/`.
+Run `npm run api` for a local json server. Navigate to `http://localhost:3000/`. THe json file will update if a movie is added from the front-end 'add movie' page.
 
 ## Code Examples
 
-* `movie-list.component.html` extract
+* `movie-list.component.html` extract showing html to load movies asynchronously with a loading image until they are shown
 
 ```html
 <!--if there are movies then show them in the DOM-->
@@ -64,15 +70,17 @@ Run `npm run api` for a local json server. Navigate to `http://localhost:3000/`.
 
 ## Features
 
+* [Angular Reactive Forms](https://angular.io/guide/reactive-forms) (model-driven forms) are used instead of the html template-driven method.
+
 * BrowserAnimations used to add some animation to the movie details loading.
 
 * Working backend on port 3000 was very easy to setup and run.
 
 ## Status & To-Do List
 
-* Status: Working home and movie detail pages. The Add movie page does not add a movie to the database.
+* Status: Working.
 
-* To-Do: fix issues. Add a back button from detail page.
+* To-Do: Add a nav back button on detail page.
 
 ## Inspiration
 
