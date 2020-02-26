@@ -12,8 +12,8 @@ export class NavbarComponent implements OnInit {
   title$ = this.navbarService.title;
 
   constructor(
-    private navbarService: NavbarService,
-    private router: Router
+    public navbarService: NavbarService,
+    public router: Router
   ) {
 
   }
