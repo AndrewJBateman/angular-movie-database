@@ -1,0 +1,5 @@
+{
+  "markdown.extension.toc.unorderedList.marker": "*",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "markdown.extension.toc.updateOnSave": false
+}

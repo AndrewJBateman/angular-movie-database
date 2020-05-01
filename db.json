@@ -62,6 +62,13 @@
       "genre": "Action",
       "releaseYear": "2017",
       "id": 9
+    },
+    {
+      "name": "Mad Max",
+      "image": "www.madmax.com",
+      "genre": "action",
+      "releaseYear": "2000",
+      "id": 10
     }
   ]
 }
