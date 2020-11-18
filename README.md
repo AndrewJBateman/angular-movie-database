@@ -1,6 +1,7 @@
 # :zap: Angular Movie Database
 
-* App using Angular 10, to create a movie database. The home screen displays a list of movie images. Each image redirects to a movie detail page with movie details listed using data-binding.
+* App using Angular 11 to create a movie database. The home screen displays a list of movie images. Each image redirects to a movie detail page with movie details listed using data-binding.
+* Tutorial code from [Paul Halliday](https://www.youtube.com/channel/UCYJ9O6X1oFt7YGXpfRwrcWg) see [:clap: Inspiration](#clap-inspiration) below.
 
 **\* Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -20,7 +21,7 @@
 
 ## :books: General info
 
-* App routing module to load movie home screen. Differential loading used with 2nd routing module - see below:
+* App routing module to load movie home screen. Differential loading used with 2nd routing module.
 * Movie-routing module for: list of movies (MovieListComponent), form to add movie (AddMovieComponent) and a movie detail page (MovieDetailComponent).
 * Dummy backend used to store json movie data.
 
@@ -32,9 +33,9 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v10](https://angular.io/)
+* [Angular v11](https://angular.io/)
 * [RxJS Library v6](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html).
-* [json-server v0.16.1](https://www.npmjs.com/package/json-server) used with the `db.json` file to get a fake API.
+* [json-server v0.16.3](https://www.npmjs.com/package/json-server) used with the `db.json` file to get a fake API.
 
 ## :floppy_disk: Setup
 
@@ -75,7 +76,7 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working. Frontend updated to Angular 10 and all dependencies updated.
+* Status: Working. Frontend updated to Angular 11 and all dependencies updated.
 * To-Do: Add a nav back button on detail page.
 
 ## :clap: Inspiration

@@ -13,7 +13,7 @@ describe('workspace-project App', () => {
     expect(page.getTitleText()).toEqual('Welcome to angular-movie-database!');
   });
 
-  afterEach(async () => {
+  afterEach(waitForAsync() () => {
     // Assert that there are no errors emitted from the browser
     const logs = await browser.manage().logs().get(logging.Type.BROWSER);
     expect(logs).not.toContain(jasmine.objectContaining({

@@ -1,7 +1,7 @@
 img {
   max-width: 300px;
 
-  @media(max-width: 640px) {
+  @media (max-width: 640px) {
     max-width: 200px;
   }
 }
