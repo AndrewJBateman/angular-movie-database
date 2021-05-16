@@ -4,10 +4,10 @@
 * Tutorial code from [Paul Halliday](https://www.youtube.com/channel/UCYJ9O6X1oFt7YGXpfRwrcWg) see [:clap: Inspiration](#clap-inspiration) below.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
-![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-akita-firebase?style=plastic)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-akita-firebase?style=plastic)
-![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-akita-firebase?style=plastic)
-![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-akita-firebase?style=plastic)
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-movie-database?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-movie-database?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-movie-database?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-movie-database?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -43,8 +43,9 @@
 
 ## :floppy_disk: Setup
 
-* Install dependencies using `npm i` then run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app does automatically reload if you change any of the source files.
-* Open a second terminal and run `npm run api` for a local json server. Navigate to `http://localhost:3000/`. The json file will update if a movie is added from the front-end 'add movie' page.
+* Install dependencies using `npm i` then run `ng serve` for a dev server. No API key required.
+* Navigate to `http://localhost:4200/`. The app does automatically reload if you change any of the source files.
+* Open a second terminal and run `npm run api` for a local json server. Navigate to `http://localhost:3000/`. The json file will update if a movie is added from the front-end 'add movie' page.  
 
 ## :computer: Code Examples
 
