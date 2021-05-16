@@ -80,7 +80,7 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working. Frontend updated to Angular 11 and all dependencies updated.
+* Status: Working. Updated may 2021
 * To-Do: Add a nav back button on detail page.
 
 ## :clap: Inspiration
