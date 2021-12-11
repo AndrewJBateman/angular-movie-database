@@ -1,7 +1,7 @@
 # :zap: Angular Movie Database
 
 * App using Angular to create a movie database. The home screen displays a list of movie images. Each image redirects to a movie detail page with movie details listed using data-binding.
-* Tutorial code from [Paul Halliday](https://www.youtube.com/channel/UCYJ9O6X1oFt7YGXpfRwrcWg) see [:clap: Inspiration](#clap-inspiration) below.
+* Tutorial code from [Paul Halliday](https://www.youtube.com/channel/UCYJ9O6X1oFt7YGXpfRwrcWg) see [:clap: Inspiration](#clap-inspiration) below. Updated to latest Angular version.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-movie-database?style=plastic)
@@ -37,7 +37,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v12](https://angular.io/)
+* [Angular v13](https://angular.io/)
 * [RxJS Library v6](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html).
 * [json-server v0.16.3](https://www.npmjs.com/package/json-server) used with the `db.json` file to get a fake API.
 
@@ -45,14 +45,14 @@
 
 * Install dependencies using `npm i` then run `ng serve` for a dev server. No API key required.
 * Navigate to `http://localhost:4200/`. The app does automatically reload if you change any of the source files.
-* Open a second terminal and run `npm run api` for a local json server. Navigate to `http://localhost:3000/`. The json file will update if a movie is added from the front-end 'add movie' page.  
+* Open a second terminal and run `npm run api` for a local json server. Navigate to `http://localhost:3000/`. The json file will update if a movie is added from the front-end 'add movie' page.
 
 ## :computer: Code Examples
 
 * `movie-list.component.html` extract showing html to load movies asynchronously with a loading image until they are shown.
 
 ```html
-<!--if there are movies then show them in the DOM-->
+<!--if there are movies then show them in the DOM using Angular async pipe-->
 <ul *ngIf="movies$ | async as movies; else loading" [@listAnimation]="movies">
   <li *ngFor="let movie of movies">
     <a [routerLink]="movie.id">
@@ -81,7 +81,7 @@
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working. Updated may 2021
+* Status: Working.
 * To-Do: Add a nav back button on detail page.
 
 ## :clap: Inspiration
