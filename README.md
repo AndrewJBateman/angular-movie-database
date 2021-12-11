@@ -38,8 +38,8 @@
 ## :signal_strength: Technologies
 
 * [Angular v13](https://angular.io/)
-* [RxJS Library v6](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html).
-* [json-server v0.16.3](https://www.npmjs.com/package/json-server) used with the `db.json` file to get a fake API.
+* [RxJS Library v7](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html).
+* [json-server v0.17.0](https://www.npmjs.com/package/json-server) used with the `db.json` file to get a fake API.
 
 ## :floppy_disk: Setup
 
