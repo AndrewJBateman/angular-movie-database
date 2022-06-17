@@ -1,7 +1,7 @@
 import { MovieService } from "./../services/movie.service";
 import { NavbarService } from "./../../navbar/services/navbar.service";
 import { Component, OnInit } from "@angular/core";
-import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { UntypedFormGroup, UntypedFormControl, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 
 @Component({
@@ -10,11 +10,11 @@ import { Router } from "@angular/router";
   styleUrls: ["./add-movie.component.scss"],
 })
 export class AddMovieComponent implements OnInit {
-  movieForm = new FormGroup({
-    name: new FormControl("", [Validators.required]),
-    image: new FormControl("", [Validators.required]),
-    genre: new FormControl("", [Validators.required]),
-    releaseYear: new FormControl("", [Validators.required]),
+  movieForm = new UntypedFormGroup({
+    name: new UntypedFormControl("", [Validators.required]),
+    image: new UntypedFormControl("", [Validators.required]),
+    genre: new UntypedFormControl("", [Validators.required]),
+    releaseYear: new UntypedFormControl("", [Validators.required]),
   });
 
   constructor(
