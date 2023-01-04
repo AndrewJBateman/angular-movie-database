@@ -1,4 +1,4 @@
-<div>
+<div *ngIf="movie">
   <img [src]="movie.image">
   <h1>{{movie.id}} - {{movie.name}}</h1>
   <h2>{{movie.genre}} - {{movie.releaseYear}}</h2>

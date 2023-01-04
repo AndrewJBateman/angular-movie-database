@@ -1,5 +1,4 @@
 import { MovieService } from "./../services/movie.service";
-import { NavbarService } from "./../../navbar/services/navbar.service";
 import { Component, OnInit } from "@angular/core";
 import { UntypedFormGroup, UntypedFormControl, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
@@ -20,11 +19,9 @@ export class AddMovieComponent implements OnInit {
   constructor(
     private router: Router,
     private movieService: MovieService,
-    private navbarService: NavbarService
   ) {}
 
   ngOnInit() {
-    this.navbarService.title.next("Add Movies");
   }
 
   addMovie() {

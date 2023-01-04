@@ -1,4 +1,3 @@
-import { NavbarService } from "./../../navbar/services/navbar.service";
 import { MovieService } from "./../services/movie.service";
 import { Component, OnInit, OnDestroy } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
@@ -17,7 +16,6 @@ export class MovieDetailComponent implements OnInit, OnDestroy {
 
   constructor(
     private movieService: MovieService,
-    private navbarService: NavbarService,
     private route: ActivatedRoute
   ) {}
 
@@ -27,7 +25,6 @@ export class MovieDetailComponent implements OnInit, OnDestroy {
       .movieFromHttp(this.id)
       .subscribe((movie) => {
         this.movie = movie;
-        this.navbarService.title.next(movie.name);
       });
   }
 

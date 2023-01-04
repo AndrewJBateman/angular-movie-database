@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { Observable } from "rxjs";
-import { NavbarService } from "./../../navbar/services/navbar.service";
 import { Movie } from "../models/movie.model";
 import { MovieService } from "./../services/movie.service";
 import {
@@ -50,14 +49,12 @@ export class MovieListComponent implements OnInit {
 
   // inject movie & navbar services
   constructor(
-    private movieService: MovieService,
-    private navbarService: NavbarService
+    private movieService: MovieService
   ) {}
 
   ngOnInit() {
     this.loadingMovies = new Array(9).fill(0).map((n, index) => index);
 
     this.movies$ = this.movieService.getMoviesFromHttp();
-    this.navbarService.title.next("FilmSelector");
   }
 }
